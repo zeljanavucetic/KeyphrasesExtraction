@@ -41,4 +41,4 @@ Graph is constructed for text as follows: nodes represent unique noun phrases, a
 
 # Acknowledgements
 
-This project has been developed as a project assignment for the subject Social network analysis at the Faculty of Organizational Sciences, University of Belgrade.
+This project has been developed as a project assignment for the subject Social Network Analysis at the Faculty of Organizational Sciences, University of Belgrade.

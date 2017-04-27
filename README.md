@@ -13,7 +13,7 @@ Extraction of keyphrases require following steps:
 - splitting text into sentences and sentences into words
 - determining the lemma of a word based on its intended meaning
 - identifying noun phrases in the grammatical structure of sentence by annotating lemmas with Part of Speech (POS) tags
-- creating graph: 1. Nodes are identified noun phrases.
+- creating graph: 1. Nodes are identified noun phrases.</br>
                   2. Edges are links between two nodes if corresponding noun phrases occur in a specific 'window' formed of words in input text (The number of common occurrences of the two noun phrases in text represent weight of edge).
 - scoring the graph using one of the centrality measures (in this case, using Degree centrality measure)
 - returning given number of keyphrases sorted by their score

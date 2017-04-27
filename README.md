@@ -55,8 +55,8 @@ Generally speaking a sliding window is a sub-list that runs over an underlying c
               [f g h]  
 ```
               
-In this case, window size is a median number of sentence length. </br>
-At the beginning, window is initialized with first words in the list of all words for finding pair for first keyphrase in the list. If the window doesn't contain the keyphrase, window is moved forward for the window size. Otherwise, if the window contains the keyphrase, pairs for the keyphrase are founded. If pair already exists, edge weight is incremented.</br>
+In this case, window size is a median number of sentence length.
+At the beginning, window is initialized with first words in the list of all words for finding pair for the first keyphrase in list. If the window doesn't contain the keyphrase, window is moved forward for the window size. Otherwise, if window contains keyphrase, pairs for the keyphrase are founded. If pair already exists, edge weight is incremented.</br>
 Next step is to make new window where some new words are added and all words before previous keyphrase are removed. This new window serve for finding pais for the next keyphrase in the list.
 
 

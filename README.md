@@ -39,6 +39,24 @@ Sliding window algorithm did a single pass through the entire document to determ
 
 Graph is constructed for text as follows: nodes represent unique noun phrases, and edges link together noun phrases that occur within a specific window of each other. Every edge between pair of noun phrases is weighted with their co-occurrence frequency. While merging edges, if pair of phrases exists in list of pairs edge weights are incremented . At the end, nodes are sorted based on degree centrality measure using [DegreeScorer](http://jung.sourceforge.net/doc/api/edu/uci/ics/jung/algorithms/scoring/DegreeScorer.html) class from the JUNG library.
 
+# Sliding window algorithm
+
+A algorithm for the construction of noun phrase collocation networks is to scan the whole document to determine how many times each pair of phrases in the phrase list occurs within a specified window size. However, this algorithm requires O(m2) passes (for m phrases) over the document text, making it computationally very expensive.</br>
+Instead of that, in this sollution is used a sliding window algorithm.
+
+Generally speaking a sliding window is a sub-list that runs over an underlying collection. I this case, an underlying collection is collection of keyphrases like [a b c d e f g h] , where every character represent one keyphrase. A sliding window of size 3 would run over it like: 
+
+''' [a b c]
+      [b c d]
+        [c d e]
+          [d e f]
+            [e f g]
+              [f g h] '''
+              
+In this case, window size is a median number of sentence length. At the beginning, window is initialized with first words in the list of all words in text.
+
+             
+
 # Acknowledgements
 
 This project has been developed as a project assignment for the subject Social Network Analysis at the Faculty of Organizational Sciences, University of Belgrade.

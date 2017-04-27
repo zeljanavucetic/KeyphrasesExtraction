@@ -46,16 +46,18 @@ Instead of that, in this sollution is used a sliding window algorithm.
 
 Generally speaking a sliding window is a sub-list that runs over an underlying collection. I this case, an underlying collection is collection of keyphrases like [a b c d e f g h] , where every character represent one keyphrase. A sliding window of size 3 would run over it like: 
 
-''' [a b c]
+ ``` [a b c]
       [b c d]
         [c d e]
           [d e f]
             [e f g]
-              [f g h] '''
+              [f g h]  
+```
               
-In this case, window size is a median number of sentence length. At the beginning, window is initialized with first words in the list of all words in text.
+In this case, window size is a median number of sentence length. </br>
+At the beginning, window is initialized with first words in the list of all words for finding pair for first keyphrase in the list. If the window doesn't contain the keyphrase, window is moved forward for the window size. Otherwise, if the window contains the keyphrase, pairs for the keyphrase are founded. If pair already exists, edge weight is incremented.</br>
+Next step is to make new window where some new words are added and all words before previous keyphrase are removed. This new window serve for finding pais for the next keyphrase in the list.
 
-             
 
 # Acknowledgements
 

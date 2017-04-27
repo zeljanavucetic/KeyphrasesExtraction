@@ -46,7 +46,8 @@ Instead of that, in this sollution is used a sliding window algorithm.
 
 Generally speaking a sliding window is a sub-list that runs over an underlying collection. I this case, an underlying collection is collection of keyphrases like [a b c d e f g h] , where every character represent one keyphrase. A sliding window of size 3 would run over it like: 
 
- ``` [a b c]
+ ``` 
+    [a b c]
       [b c d]
         [c d e]
           [d e f]

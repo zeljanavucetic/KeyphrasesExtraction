@@ -62,9 +62,9 @@ Next step is to make a new window by removing the words that precede the found k
 # Analysis
 
 In order to analyse how much the program is efficient in extracting the most relevant keyphrases from natural language texts,
-several types of texts were used.
+several types of texts were used. The input texts for testing are: news article, scientific work, blog post.
 
-Based on the results of analysis, general conclusion is that the program is ore efficient for longer texts (more then 3 sentences).
+Based on the results of analysis, general conclusion is that the program is more efficient for longer texts. The length of text is crucial. The program was more successful in extracting keyphrases from texts like scientific work or news article then from blog post. The reason is that the texts like blog post are mostly shorter and have just one sentence. If text have more then three sentences approximately, it is very easy to get the main topic of the input text based on the most relevant keyphrases.
 
 # Acknowledgements
 

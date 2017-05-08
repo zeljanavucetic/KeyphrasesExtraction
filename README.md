@@ -59,6 +59,12 @@ In this project, window size ws is the median of sentences length.
 At the beginning, the window is initialized with the first ws words in the list of all words; it is searched for pairs of the first keyphrase in the keyphrases list. If the window does not contain the keyphrase, it is moved forward for the window size. Otherwise, that is, if the window contains the keyphrase, it is examined for the presence of other keyphrases, so that keyphrase pairs can be found. If a pair already exists, its edge weight is incremented.</br>
 Next step is to make a new window by removing the words that precede the found keyphrase and adding the same number of new words. This new window serves for finding pairs for the next keyphrase in the keyphrases list.
 
+# Analysis
+
+In order to analyse how much the program is efficient in extracting the most relevant keyphrases from natural language texts,
+several types of texts were used.
+
+Based on the results of analysis, general conclusion is that the program is ore efficient for longer texts (more then 3 sentences).
 
 # Acknowledgements
 

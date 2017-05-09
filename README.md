@@ -120,34 +120,24 @@ Also, there is a minimal error in results. During code execution all words less 
 News Article 
 ------------
 
-This text is in the file ***"NewsArticle.txt"***. This piece of news can be readed from this from this [link](http://www.bbc.com/news/world-asia-39854702). The title of this article is "Taliban fight: US may send 3,000 more troops to Afghanistan". The program extracted 30 keyphrases in total and samo of these keyphrases are  : 
-
-military officials ,the state department, 3,000 more troops, the taliban media report
-, military leaders
-, taliban leaders
-, air strikes
-, president donald trump
-, unnamed officials
-, other nato countries
-, 3,000-5 ,000 soldiers
-, 13,000 nato troops
-, combat operations
-, special forces
-, senate committee
-, few thousand
-, military compound
-, the northern city
-, political tactics
-, foreign forces
-, taliban militants
-, northern afghanistan
-, thousands families. 
-Onlu two of them are scored. 
+This text is in the file ***"NewsArticle.txt"***. This piece of news can be readed from this from this [link](http://www.bbc.com/news/world-asia-39854702). The title of this article is "Taliban fight: US may send 3,000 more troops to Afghanistan". The program extracted 30 keyphrases in total and the best scored keyphrases are: 
 
 | Keyphrases                        | Score |
 |-----------------------------------|-------|
-| graph-based approaches            | 7     |
-| summarization semantic search     | 5     |
+| northern afghanistan              | 4     |
+| military leaders                  | 4     |
+| currently the country             | 4     |
+| combat operations                 | 4     |
+| 3,000-5,000 soldiers              | 4     |         
+| special forces                    | 3     |
+| mazar-e sharif                    | 3     |
+| 13,000 nato troops                | 3     |           
+| senate committee                  | 2     |
+| donald trump                      | 3     |        
+| political tactics                 | 2     |
+| foreign forces                    | 2     |
+
+The program extracted the keyphrases successfully, too. There are more extracted keyphrases with the minor score. Unlike the previous case, that is expected because the input text is longer.
 
 
 # Acknowledgements

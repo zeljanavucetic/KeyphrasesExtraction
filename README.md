@@ -69,7 +69,7 @@ Based on the results of analysis, general conclusion is that the program is more
 Scientific work 
 ---------------
 
-In file ScientificWork.txt is a text with this content: 
+In the file ***ScientificWork.txt*** is a text with this content: 
 *“Keyword and keyphrase extraction is an
 important problem in natural language
 processing, with applications ranging
@@ -97,7 +97,7 @@ methods give results that are competitive
 with and, in some cases, better than two
 strong unsupervised baselines.”*
 
-After the text passed through the code of program, the following keyphrases are extracted sorted by their score.
+After the text passed through the code of program, the most relevant keyphrases are extracted sorted by their score.
 
 | Keyphrases                        | Score |
 |-----------------------------------|-------|
@@ -114,6 +114,40 @@ After the text passed through the code of program, the following keyphrases are 
 | four benchmark datasets           | 2     |
 | centrality-based methods          | 2     |
 
+After compare the input text with the extracted keyphrases, it is easy to notice that the program succesfully extracted the most relevant keyphrases. We can assume the main topic based on these keyphrases. On the first sight in the text, it is evident that the "graph-based approaches" is the most important keyphrase. 
+Also, there is a minimal error in results. During code execution all words less then three characters are removed and because of that some extracted keyphrases aren't complete. Instead "PageRank algorithm on a network of words", extracted keyphrase is "pagerank algorithm network words".
+
+News Article 
+------------
+
+This text is in the file ***"NewsArticle.txt"***. This piece of news can be readed from this from this [link](http://www.bbc.com/news/world-asia-39854702). The title of this article is "Taliban fight: US may send 3,000 more troops to Afghanistan". The program extracted 30 keyphrases in total and samo of these keyphrases are  : 
+
+military officials ,the state department, 3,000 more troops, the taliban media report
+, military leaders
+, taliban leaders
+, air strikes
+, president donald trump
+, unnamed officials
+, other nato countries
+, 3,000-5 ,000 soldiers
+, 13,000 nato troops
+, combat operations
+, special forces
+, senate committee
+, few thousand
+, military compound
+, the northern city
+, political tactics
+, foreign forces
+, taliban militants
+, northern afghanistan
+, thousands families. 
+Onlu two of them are scored. 
+
+| Keyphrases                        | Score |
+|-----------------------------------|-------|
+| graph-based approaches            | 7     |
+| summarization semantic search     | 5     |
 
 
 # Acknowledgements

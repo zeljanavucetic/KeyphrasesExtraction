@@ -62,9 +62,10 @@ Next step is to make a new window by removing the words that precede the found k
 # Analysis
 
 In order to analyse how much the program is efficient in extracting the most relevant keyphrases from natural language texts,
-several types of texts were used. The input texts for testing are: news article, scientific work, blog post.
+several types of texts were used. The input texts for testing are: scientific work, news article, blog post.
 
-Based on the results of analysis, general conclusion is that the program is more efficient for longer texts. The length of text is crucial. The program was more successful in extracting keyphrases from texts like scientific work or news article then from blog post. The reason is that the texts like blog post are mostly shorter and have just one sentence. If text have more then three sentences approximately, it is very easy to get the main topic of the input text based on the most relevant keyphrases.
+Based on the results of analysis, general conclusion is that the program is more efficient for longer texts. The program was more successful in extracting keyphrases from texts like scientific work or news article then from blog post. The reason is that the texts like blog post are mostly shorter and it is 
+difficult to determine relationships between keyphrases. If text have more then three sentences approximately, it is very easy to get the main topic of the input text based on the most relevant keyphrases.
 
 Scientific work 
 ---------------
@@ -114,7 +115,7 @@ After the text passed through the code of program, the most relevant keyphrases 
 | four benchmark datasets           | 2     |
 | centrality-based methods          | 2     |
 
-After compare the input text with the extracted keyphrases, it is easy to notice that the program succesfully extracted the most relevant keyphrases. We can assume the main topic based on these keyphrases. On the first sight in the text, it is evident that the "graph-based approaches" is the most important keyphrase. 
+After compare the input text with the extracted keyphrases, it is easy to notice that the program successfully extracted the most relevant keyphrases. We can assume the main topic based on these keyphrases. On the first sight in the text, it is evident that the "graph-based approaches" is the most important keyphrase. 
 Also, there is a minimal error in results. During code execution all words less then three characters are removed and because of that some extracted keyphrases aren't complete. Instead "PageRank algorithm on a network of words", extracted keyphrase is "pagerank algorithm network words".
 
 News article 

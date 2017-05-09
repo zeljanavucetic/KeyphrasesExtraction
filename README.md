@@ -117,10 +117,10 @@ After the text passed through the code of program, the most relevant keyphrases 
 After compare the input text with the extracted keyphrases, it is easy to notice that the program succesfully extracted the most relevant keyphrases. We can assume the main topic based on these keyphrases. On the first sight in the text, it is evident that the "graph-based approaches" is the most important keyphrase. 
 Also, there is a minimal error in results. During code execution all words less then three characters are removed and because of that some extracted keyphrases aren't complete. Instead "PageRank algorithm on a network of words", extracted keyphrase is "pagerank algorithm network words".
 
-News Article 
+News article 
 ------------
 
-This text is in the file ***"NewsArticle.txt"***. This piece of news can be readed from this from this [link](http://www.bbc.com/news/world-asia-39854702). The title of this article is "Taliban fight: US may send 3,000 more troops to Afghanistan". The program extracted 30 keyphrases in total and the best scored keyphrases are: 
+This text is in the file ***NewsArticle1.txt***. This piece of news can be readed from this from this [link](http://www.bbc.com/news/world-asia-39854702). The title of this article is "Taliban fight: US may send 3,000 more troops to Afghanistan". The program extracted 30 keyphrases in total and the best scored keyphrases are: 
 
 | Keyphrases                        | Score |
 |-----------------------------------|-------|
@@ -137,8 +137,22 @@ This text is in the file ***"NewsArticle.txt"***. This piece of news can be read
 | political tactics                 | 2     |
 | foreign forces                    | 2     |
 
-The program extracted the keyphrases successfully, too. There are more extracted keyphrases with the minor score. Unlike the previous case, that is expected because the input text is longer.
+The program extracted the keyphrases successfully, too. There are more extracted keyphrases with the minor score. Unlike the previous case, that is expected because the input text is longer and this kind of text could include more than one topic.
 
+Blog post
+---------
+
+This text is in the file ***Blog1.txt***. This piece of blog post can be readed from this from this [link](http://thebests.kotaku.com/the-best-video-game-trailers-1752138967). This short text is about trailer of game "Star wars". The program extracted 5 keyphrases in total and all of them are scored.
+
+| Keyphrases                        | Score |
+|-----------------------------------|-------|
+| the old republic                  | 4     |
+| the biggest impression            | 4     |
+| star wars                         | 4     |
+| here this clip                    | 4     |
+| excellent cinematic clips         | 4     |         
+
+In this case, all keyphrases have the same score. 
 
 # Acknowledgements
 

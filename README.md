@@ -66,6 +66,56 @@ several types of texts were used. The input texts for testing are: news article,
 
 Based on the results of analysis, general conclusion is that the program is more efficient for longer texts. The length of text is crucial. The program was more successful in extracting keyphrases from texts like scientific work or news article then from blog post. The reason is that the texts like blog post are mostly shorter and have just one sentence. If text have more then three sentences approximately, it is very easy to get the main topic of the input text based on the most relevant keyphrases.
 
+Scientific work 
+---------------
+
+In file ScientificWork.txt is a text with this content: 
+*“Keyword and keyphrase extraction is an
+important problem in natural language
+processing, with applications ranging
+from summarization to semantic search
+to document clustering. Graph-based approaches
+to keyword and keyphrase extraction
+avoid the problem of acquiring a
+large in-domain training corpus by applying
+variants of PageRank algorithm on a
+network of words. Although graph-based
+approaches are knowledge-lean and easily
+adoptable in online systems, it remains
+largely open whether they can benefit from
+centrality measures other than PageRank.
+In this paper, we experiment with an array
+of centrality measures on word and
+noun phrase collocation networks, and analyze
+their performance on four benchmark
+datasets. Not only are there centrality
+measures that perform as well as or better
+than PageRank, but they are much simpler
+(e.g., degree, strength, and neighborhood
+size). Furthermore, centrality-based
+methods give results that are competitive
+with and, in some cases, better than two
+strong unsupervised baselines.”*
+
+After the text passed through the code of program, the following keyphrases are extracted sorted by their score.
+
+| Keyphrases                        | Score |
+|-----------------------------------|-------|
+| graph-based approaches            | 7     |
+| summarization semantic search     | 5     |
+| natural language                  | 5     |
+| large in-domain training corpus   | 5     |
+| keyphrase extraction              | 5     |         
+| centrality measures               | 5     |
+| pagerank algorithm network words  | 4     |
+| important problem                 | 4     |           
+| not only                          | 3     |
+| adoptable online systems          | 3     |        
+| four benchmark datasets           | 2     |
+| centrality-based methods          | 2     |
+
+
+
 # Acknowledgements
 
 This project has been developed as a project assignment for the course Social Network Analysis at the Faculty of Organizational Sciences, University of Belgrade.

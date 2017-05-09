@@ -65,9 +65,10 @@ public class SlidingWindowAlgorithm {
                                 window.clear();
                                 for (int z = 0; z < windowSize; z++ ) {
                                  //save position of the last added word from the list   
-                                 position++;
+                                 
                                    if(position < allWords.size()){
 			           window.add(allWords.get(position));
+					   position++;
                                    }
                                    else {
                                        break;

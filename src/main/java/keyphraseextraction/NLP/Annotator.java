@@ -19,7 +19,7 @@ import java.util.Properties;
  * @author Zana
  */
 public class Annotator {
-    public static List<CoreMap> AnnotateText (String fileName){
+    public static List<CoreMap> AnnotateText (String text){
     
                 Properties properties;
 		properties = new Properties();
@@ -29,9 +29,9 @@ public class Annotator {
 	
                 List<CoreLabel> tokens = new LinkedList<CoreLabel>();
                 
-                //read text from file
-                String text;
-                text = TextReader.getTextFromFile(fileName);
+//                //read text from file
+//                String text;
+//                text = TextReader.getTextFromFile(fileName);
                 
 		// create an empty Annotation just with the given text
 		Annotation document = new Annotation(text);

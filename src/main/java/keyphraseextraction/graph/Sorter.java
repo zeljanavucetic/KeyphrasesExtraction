@@ -32,9 +32,10 @@ public class Sorter {
 		for (Map.Entry<String, Integer> entry : scoredPhrases.entrySet()) {
 			if (i >= number)
 				break;
-
+                        else{
 			requiredPhrases.put(entry.getKey(), entry.getValue());
 			i++;
+                        }
 		}
 		return sortPhrasesByScore(requiredPhrases);
 	}

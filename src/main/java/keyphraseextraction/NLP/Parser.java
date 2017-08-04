@@ -35,7 +35,7 @@ public class Parser {
                  return median;
     }
     
-    public static InputForAlgorithm GetInputForAlgorithm (String fileName){
+    public static InputForAlgorithm GetInputForAlgorithm (String text){
         
                 List<CoreLabel> tokens = new LinkedList<CoreLabel>();
                 
@@ -47,7 +47,7 @@ public class Parser {
 		List<String> allWords = new LinkedList<String>();
                 
                 //List of all sentences in the text
-                List<CoreMap> allSentences = AnnotateText(fileName);
+                List<CoreMap> allSentences = AnnotateText(text);
                 
                 List<Tree> phraseTree =new ArrayList<Tree>();
                 
